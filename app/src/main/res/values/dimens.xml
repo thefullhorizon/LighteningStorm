@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="guide_point_padding">4dp</dimen>
+    <dimen name="guide_point_size">6dp</dimen>
+
+</resources>

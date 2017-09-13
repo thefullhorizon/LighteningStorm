@@ -9,7 +9,7 @@
         Data:
         Page: classified by business
         UI: composed view in view package then encapsulated to a adapter
-        Widget: customized view
+        Widget: custom view
         Utils: common tools
 
 2017-9-12 11:39:22

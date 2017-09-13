@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/splash"
+    android:background="@mipmap/splash_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:orientation="vertical">
+
+                <com.nanshan.lighteningstorm.widget.HalvettThinTV
+                    android:id="@+id/theme_life"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal"
+                    android:text="@string/splash_center_theme_life"
+                    android:textColor="@android:color/white"
+                    android:textSize="45sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@android:color/white"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+
+                <com.nanshan.lighteningstorm.widget.HalvettThinTV
+                    android:id="@+id/nickname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal"
+                    android:text="@string/splash_center_nickname"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+                <com.nanshan.lighteningstorm.widget.HalvettThinTV
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center_horizontal"
+                    android:textSize="18dp"
+                    android:layout_marginBottom="30dp"
+                    android:textColor="@@android:color/white"
+                    android:text="@string/splash_bottom_connection"/>
+
+        </LinearLayout>
+
+</RelativeLayout>

@@ -1,11 +1,11 @@
-package com.nanshan.lighteningstorm.Pages.index;
+package com.nanshan.lighteningstorm.pages.index;
 
 import android.app.Activity;
 import android.os.Bundle;
 
 import com.nanshan.lighteningstorm.R;
 
-public class MainActivity extends Activity {
+public class Main extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
