@@ -12,6 +12,7 @@ import com.nanshan.lighteningstorm.R;
 import com.nanshan.lighteningstorm.pages.index.Main;
 import com.nanshan.lighteningstorm.ui.adapter.WelcomeAdapter;
 import com.nanshan.lighteningstorm.utils.PageUtils;
+import com.nanshan.lighteningstorm.utils.SPUtils;
 
 import butterknife.BindView;
 
@@ -24,6 +25,8 @@ public class Welcome extends BaseActivity implements ViewPager.OnPageChangeListe
     private int number;
     private WelcomeAdapter mWecomeAdapter;
 
+    public static String HAVE_SHOW  = "have_show";
+
     @Override
     public int getLayout() {
         return R.layout.activity_welcome;
@@ -32,11 +35,13 @@ public class Welcome extends BaseActivity implements ViewPager.OnPageChangeListe
     @Override
     public void initializing(Bundle savedInstanceState) {
 
+        SPUtils.getInstance().write(HAVE_SHOW,true);
         mWecomeAdapter = new WelcomeAdapter();
         mWecomeAdapter.setOnWelcomePageClickListener(new WelcomeAdapter.OnWelcomePageClickListener() {
             @Override
             public void onClickListener() {
                 PageUtils.pageTransition(Welcome.this, Main.class);
+                finish();
             }
         });
         vpGuide.setAdapter(mWecomeAdapter);

@@ -10,7 +10,9 @@ import android.view.animation.Animation;
 import android.widget.RelativeLayout;
 
 import com.nanshan.lighteningstorm.R;
+import com.nanshan.lighteningstorm.pages.index.Main;
 import com.nanshan.lighteningstorm.utils.PageUtils;
+import com.nanshan.lighteningstorm.utils.SPUtils;
 import com.nanshan.lighteningstorm.widget.HalvettThinTV;
 
 import butterknife.BindView;
@@ -50,7 +52,11 @@ public class Splash extends BaseActivity {
 
             @Override
             public void onAnimationEnd(Animator animation) {
-                PageUtils.pageTransition(Splash.this, Welcome.class);
+                if(SPUtils.getInstance().read(Welcome.HAVE_SHOW,false)){
+                    PageUtils.pageTransition(Splash.this, Main.class);
+                }else{
+                    PageUtils.pageTransition(Splash.this, Welcome.class);
+                }
                 finish();
             }
 

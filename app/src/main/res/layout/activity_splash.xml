@@ -10,7 +10,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="150dp"
+            android:layout_marginTop="100dp"
             android:orientation="vertical">
 
                 <com.nanshan.lighteningstorm.widget.HalvettThinTV
@@ -20,8 +20,8 @@
                     android:layout_gravity="center"
                     android:gravity="center_horizontal"
                     android:text="@string/splash_center_theme_life"
-                    android:textColor="@android:color/white"
-                    android:textSize="45sp" />
+                    android:textColor="@color/color_ActionPie"
+                    android:textSize="32sp" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -29,6 +29,7 @@
                     android:layout_gravity="center"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
                     android:background="@android:color/white"/>
 
 
@@ -58,7 +59,7 @@
                     android:layout_alignParentBottom="true"
                     android:gravity="center_horizontal"
                     android:textSize="18dp"
-                    android:layout_marginBottom="30dp"
+                    android:layout_marginBottom="60dp"
                     android:textColor="@@android:color/white"
                     android:text="@string/splash_bottom_connection"/>
 
