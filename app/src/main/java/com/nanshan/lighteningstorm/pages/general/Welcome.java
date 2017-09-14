@@ -9,10 +9,12 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.nanshan.lighteningstorm.R;
+import com.nanshan.lighteningstorm.pages.events.CommonEvent;
 import com.nanshan.lighteningstorm.pages.index.Main;
 import com.nanshan.lighteningstorm.ui.adapter.WelcomeAdapter;
 import com.nanshan.lighteningstorm.utils.PageUtils;
 import com.nanshan.lighteningstorm.utils.SPUtils;
+import com.squareup.otto.Subscribe;
 
 import butterknife.BindView;
 
@@ -37,13 +39,6 @@ public class Welcome extends BaseActivity implements ViewPager.OnPageChangeListe
 
         SPUtils.getInstance().write(HAVE_SHOW,true);
         mWecomeAdapter = new WelcomeAdapter();
-        mWecomeAdapter.setOnWelcomePageClickListener(new WelcomeAdapter.OnWelcomePageClickListener() {
-            @Override
-            public void onClickListener() {
-                PageUtils.pageTransition(Welcome.this, Main.class);
-                finish();
-            }
-        });
         vpGuide.setAdapter(mWecomeAdapter);
         vpGuide.addOnPageChangeListener(this);
         number = mWecomeAdapter.getCount();
@@ -106,6 +101,14 @@ public class Welcome extends BaseActivity implements ViewPager.OnPageChangeListe
         animSet.play(animatorA).with(animatorX).with(animatorY);
         animSet.setDuration(1000);
         animSet.start();
+    }
+
+    @Subscribe
+    public void toMain(String event) {
+        if (CommonEvent.TOMIANFROMWELCOM.equals(event)) {
+            PageUtils.pageTransition(Welcome.this, Main.class);
+            finish();
+        }
     }
 
 }

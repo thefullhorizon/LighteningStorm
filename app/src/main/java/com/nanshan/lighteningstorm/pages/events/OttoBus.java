@@ -18,7 +18,7 @@ public class OttoBus {
         return ottoBus;
     }
 
-    public Bus getBusInstance(){
+    public Bus getBus(){
         if (bus == null){
             bus = new Bus();
         }

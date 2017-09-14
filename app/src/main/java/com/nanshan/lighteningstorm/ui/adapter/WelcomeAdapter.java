@@ -12,6 +12,8 @@ import android.widget.ImageView;
 
 import com.nanshan.lighteningstorm.R;
 import com.nanshan.lighteningstorm.config.MyApplication;
+import com.nanshan.lighteningstorm.pages.events.CommonEvent;
+import com.nanshan.lighteningstorm.pages.events.OttoBus;
 import com.nanshan.lighteningstorm.widget.HalvettThinTV;
 
 import java.util.ArrayList;
@@ -28,8 +30,6 @@ public class WelcomeAdapter extends PagerAdapter {
     private int[] mVImageResIds = new int[]{R.mipmap.splash_bg,R.mipmap.splash_bg,R.mipmap.splash_bg};
     private List<View> mViews;
 
-    public OnWelcomePageClickListener onWelcomePageClickListener;
-
     public WelcomeAdapter() {
         size = instructions.length;
         mViews = new ArrayList<>(size);
@@ -45,10 +45,7 @@ public class WelcomeAdapter extends PagerAdapter {
                 vGoIndexBtn.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-
-                        if (onWelcomePageClickListener != null){
-                            onWelcomePageClickListener.onClickListener();
-                        }
+                        OttoBus.getInstance().getBus().post(CommonEvent.TOMIANFROMWELCOM);
                     }
                 });
             }
@@ -75,14 +72,6 @@ public class WelcomeAdapter extends PagerAdapter {
     @Override
     public void destroyItem(ViewGroup container, int position, Object object) {
         container.removeView(mViews.get(position));
-    }
-
-    public interface OnWelcomePageClickListener{
-        void onClickListener();
-    }
-
-    public void setOnWelcomePageClickListener(OnWelcomePageClickListener onWelcomePageClickListener) {
-        this.onWelcomePageClickListener = onWelcomePageClickListener;
     }
 
     public List<View> getmViews() {

@@ -36,8 +36,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-
-        OttoBus.getInstance().getBusInstance().register(this);
+        OttoBus.getInstance().getBus().register(this);
     }
 
     @Override
@@ -55,7 +54,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     protected void onStop() {
         super.onStop();
 
-        OttoBus.getInstance().getBusInstance().unregister(this);
+        OttoBus.getInstance().getBus().unregister(this);
     }
 
     @Override

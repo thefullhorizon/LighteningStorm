@@ -1,16 +1,5 @@
 
-
-2017-9-12 11:41:28
-    build a Android Lib frame refers LS include modules as belows:
-        Exception: common exception handling
-        Utils: common functions
-
-    build a project framework of LS include modules as belows:
-        Data:
-        Page: classified by business
-        UI: composed view in view package then encapsulated to a adapter
-        Widget: custom view
-        Utils: common tools
-
-2017-9-12 11:39:22
-    initialize a project named LighteningStorm in English, called "闪电风暴" in Chinese, abbreviating to LS
+guideline:
+    OOP
+    Otto comes first ,then interface when components communicate
+    interface generally used in hierarchy between classes
