@@ -1,8 +1,8 @@
 
 2017-9-14 11:10:39
     create Login and Index pages (undo)
-    encapsulate common widgets such as: dialog(FragmentDialog) recycleView adapter
-
+    encapsulate common widgets such as: dialog(FragmentDialog) recycleView adapter (undo)
+    encapsulate commonWebView (undo)
 
 2017-9-12 11:41:28
     build a Android Lib frame refers LS include modules as belows:

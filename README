@@ -1,5 +1,7 @@
 
 guideline:
     OOP
-    Otto comes first ,then interface when components communicate
+    Otto mainly used in one to majority
     interface generally used in hierarchy between classes
+
+

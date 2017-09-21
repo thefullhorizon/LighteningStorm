@@ -1,8 +1,10 @@
 package com.nanshan.lighteningstorm.pages.general;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.WindowManager;
 
 import com.nanshan.lighteningstorm.R;
 import com.nanshan.lighteningstorm.pages.events.OttoBus;
@@ -25,6 +27,10 @@ public abstract class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        }
         if (getLayout() != 0) {
             setContentView(getLayout());
         }
