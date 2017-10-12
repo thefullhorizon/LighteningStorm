@@ -181,8 +181,8 @@ public class Main extends BaseActivity implements NavigationView.OnNavigationIte
 
                 break;
             case R.id.action_topics:
-//                intent = new Intent(Main.this, TopicsActivity.class);
-//                startActivity(intent);
+                intent = new Intent(Main.this, Topics.class);
+                startActivity(intent);
 
                 break;
 

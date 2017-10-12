@@ -5,6 +5,34 @@
     android:orientation="vertical"
     xmlns:card_view="http://schemas.android.com/apk/res-auto">
 
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview_omrs"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="5dp"
+        card_view:contentPadding="5dp">
+
+        <!--1550*800-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/home_camera">
+
+            <TextView
+                android:id="@+id/tv_home_omrs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="32sp"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
     <TextView
         android:id="@+id/fragment_text_view"
         android:layout_width="match_parent"

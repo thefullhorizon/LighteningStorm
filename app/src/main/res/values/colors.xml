@@ -13,5 +13,10 @@
     <color name="color_ActionPie">#F2D50D</color>
 
     <color name="bottom_navigation_clicking_state">#333333</color>
+    <color name="transparent">#00000000</color>
+    <color name="text_view_color">#757575</color>
+    <!--草绿色-->
+    <color name="color_grass_green">#0099EE</color>
+
 
 </resources>

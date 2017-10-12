@@ -197,7 +197,7 @@ public class PieChatView extends View {
     private void drawText(Canvas mCanvas, String text, float x, float y, Paint mPaint) {
         Rect rect = new Rect();
         //up
-        String textTemp = "总资产（元）";
+        String textTemp = "energy(gallon)";
         mTextPaint.setTextSize(sp2px(12));
         mTextPaint.setColor(Color.parseColor("#757575"));
         mTextPaint.getTextBounds(textTemp, 0, textTemp.length(), rect);
