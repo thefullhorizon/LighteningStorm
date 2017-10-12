@@ -9,8 +9,6 @@ import java.util.List;
 import butterknife.BindView;
 
 /**
- * Created by Kevin on 2016/11/28.
- * Blog:http://blog.csdn.net/student9128
  * Description: HomeFragment
  */
 

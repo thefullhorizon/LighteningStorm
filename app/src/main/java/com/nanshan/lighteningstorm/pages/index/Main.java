@@ -67,7 +67,7 @@ public class Main extends BaseActivity implements NavigationView.OnNavigationIte
          * 使用ToolBar的方式让NavigationDrawer浮在ToolBar上面更加的符合Material Design
          * 使用ToolBar 注意Theme是NoActionBar 布局中使用ToolBar
          */
-        toolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
+//        toolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
         toolbar.setTitle("");
         setSupportActionBar(toolbar);
         //将drawerLayout, toolbar联动绑定

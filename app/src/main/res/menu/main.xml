@@ -9,11 +9,13 @@
         android:id="@+id/action_dts"
         app:showAsAction="always"
         android:orderInCategory="100"
+        android:textColor="@color/white"
         android:title="@string/action_dts"/>
     <item
         android:id="@+id/action_topics"
         app:showAsAction="always"
         android:orderInCategory="100"
+        android:textColor="@color/white"
         android:title="@string/action_topics"/>
 
     <item

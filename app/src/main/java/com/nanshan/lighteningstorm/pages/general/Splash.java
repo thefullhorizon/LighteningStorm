@@ -43,7 +43,7 @@ public class Splash extends BaseActivity {
         ObjectAnimator animatorY = ObjectAnimator.ofFloat(view,"scaleY", 1.0f, 1.1f);
         AnimatorSet animSet = new AnimatorSet();
         animSet.play(animatorA).with(animatorX).with(animatorY);
-        animSet.setDuration(2 * 1000);
+        animSet.setDuration(1 * 1000);
         animSet.addListener(new Animator.AnimatorListener() {
             @Override
             public void onAnimationStart(Animator animation) {
