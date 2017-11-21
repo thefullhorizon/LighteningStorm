@@ -60,7 +60,7 @@
                     android:gravity="center_horizontal"
                     android:textSize="18dp"
                     android:layout_marginBottom="60dp"
-                    android:textColor="@@android:color/white"
+                    android:textColor="@android:color/white"
                     android:text="@string/splash_bottom_connection"/>
 
         </LinearLayout>
