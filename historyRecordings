@@ -1,4 +1,8 @@
 
+2017-11-21[important]
+    create a new branch called develop as the main load to develop
+    master is the stable code ,branch develop merge into master at regular intervals
+
 2017-9-14 11:10:39
     create Login and Index pages (undo)
     encapsulate common widgets such as: dialog(FragmentDialog) recycleView adapter (undo)
