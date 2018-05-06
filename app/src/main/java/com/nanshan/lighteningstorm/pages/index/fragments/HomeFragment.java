@@ -1,9 +1,13 @@
 package com.nanshan.lighteningstorm.pages.index.fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+
 import com.nanshan.lighteningstorm.R;
-import com.nanshan.lighteningstorm.data.domain.AssetInfoBean;
-import com.nanshan.lighteningstorm.widget.PieChatView;
+import com.nanshan.lighteningstorm.base.data.AssetInfoBean;
+import com.nanshan.lighteningstorm.pages.channel_reading.ReadingActivity;
+import com.nanshan.lighteningstorm.pages.widget.PieChatView;
 import java.util.ArrayList;
 import java.util.List;
 import butterknife.BindView;
@@ -43,8 +47,14 @@ public class HomeFragment extends BaseFragment {
         data.add(new AssetInfoBean("IELTS","#29d96c",10));
         data.add(new AssetInfoBean("Reading","#007afa",20));
         mAssignCircle.setData(data);
-        mAssignCircle.setTotalAsset("XXX");
+        mAssignCircle.setTotalAsset("Reading");//暂时的借用这个位置，作为reading频道的入口
         mAssignCircle.startDraw();
+        mAssignCircle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), ReadingActivity.class));
+            }
+        });
 
     }
 

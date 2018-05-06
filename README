@@ -5,3 +5,11 @@ guideline:
     interface generally used in hierarchy between classes
 
 
+# 重大改版记录
+
+
+2018-05-06 17:11:19
+
+* 按照pages business base 三个层次对项目进行架构
+* 添加阅读频道
+

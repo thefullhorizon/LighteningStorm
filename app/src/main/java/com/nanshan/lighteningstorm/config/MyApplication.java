@@ -3,7 +3,7 @@ package com.nanshan.lighteningstorm.config;
 import android.app.Application;
 import android.graphics.Typeface;
 
-import com.nanshan.lighteningstorm.widget.HalvettThinTV;
+import com.nanshan.lighteningstorm.pages.widget.HalvettThinTV;
 
 /**
  * Created by nanshan on 9/13/2017.

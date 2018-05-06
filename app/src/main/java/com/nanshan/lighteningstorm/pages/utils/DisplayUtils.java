@@ -1,4 +1,4 @@
-package com.nanshan.lighteningstorm.utils;
+package com.nanshan.lighteningstorm.pages.utils;
 
 import android.content.Context;
 import android.util.DisplayMetrics;

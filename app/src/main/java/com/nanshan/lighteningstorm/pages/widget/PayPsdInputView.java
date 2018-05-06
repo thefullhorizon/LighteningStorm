@@ -1,4 +1,4 @@
-package com.nanshan.lighteningstorm.widget;
+package com.nanshan.lighteningstorm.pages.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -13,11 +13,10 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
 
 
 import com.nanshan.lighteningstorm.R;
-import com.nanshan.lighteningstorm.utils.DisplayUtils;
+import com.nanshan.lighteningstorm.pages.utils.DisplayUtils;
 
 import static android.graphics.Paint.ANTI_ALIAS_FLAG;
 

@@ -20,7 +20,8 @@
         <activity android:name=".pages.index.Main" />
         <activity android:name=".pages.general.Login" />
         <activity android:name=".pages.general.Welcome" />
-        <activity android:name=".pages.index.Topics"></activity>
+        <activity android:name=".pages.index.Topics" />
+        <activity android:name=".pages.channel_reading.ReadingActivity"></activity>
     </application>
 
 </manifest>

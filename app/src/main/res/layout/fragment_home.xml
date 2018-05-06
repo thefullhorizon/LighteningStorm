@@ -12,7 +12,7 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <com.nanshan.lighteningstorm.widget.PieChatView
+        <com.nanshan.lighteningstorm.pages.widget.PieChatView
             android:id="@+id/assign_circle"
             android:layout_width="match_parent"
             android:layout_height="248dp"

@@ -1,4 +1,4 @@
-package com.nanshan.lighteningstorm.utils;
+package com.nanshan.lighteningstorm.pages.utils;
 
 public class CheckDoubleClick {
     private static long lastClickTime = 0;

@@ -1,4 +1,4 @@
-package com.nanshan.lighteningstorm.utils;
+package com.nanshan.lighteningstorm.pages.utils;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;

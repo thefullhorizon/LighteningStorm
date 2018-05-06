@@ -1,6 +1,5 @@
-package com.nanshan.lighteningstorm.utils;
+package com.nanshan.lighteningstorm.pages.utils;
 
-import android.content.Context;
 import android.widget.Toast;
 
 import com.nanshan.lighteningstorm.config.MyApplication;

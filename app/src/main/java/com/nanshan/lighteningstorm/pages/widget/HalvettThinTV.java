@@ -1,4 +1,4 @@
-package com.nanshan.lighteningstorm.widget;
+package com.nanshan.lighteningstorm.pages.widget;
 
 import android.content.Context;
 import android.graphics.Typeface;

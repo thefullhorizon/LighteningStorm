@@ -1,9 +1,5 @@
-package com.nanshan.lighteningstorm.ui.adapter;
+package com.nanshan.lighteningstorm.pages.ui.adapter;
 
-import android.app.Activity;
-import android.content.Intent;
-import android.net.Uri;
-import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,7 +10,7 @@ import com.nanshan.lighteningstorm.R;
 import com.nanshan.lighteningstorm.config.MyApplication;
 import com.nanshan.lighteningstorm.pages.events.CommonEvent;
 import com.nanshan.lighteningstorm.pages.events.OttoBus;
-import com.nanshan.lighteningstorm.widget.HalvettThinTV;
+import com.nanshan.lighteningstorm.pages.widget.HalvettThinTV;
 
 import java.util.ArrayList;
 import java.util.List;

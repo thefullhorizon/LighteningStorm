@@ -11,7 +11,7 @@
         android:visibility="gone"
         android:layout_centerHorizontal="true"/>
 
-    <com.nanshan.lighteningstorm.widget.HalvettThinTV
+    <com.nanshan.lighteningstorm.pages.widget.HalvettThinTV
         android:id="@+id/iv_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

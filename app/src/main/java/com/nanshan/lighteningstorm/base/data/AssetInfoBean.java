@@ -1,4 +1,4 @@
-package com.nanshan.lighteningstorm.data.domain;
+package com.nanshan.lighteningstorm.base.data;
 
 /**
  * Created by nanshan on 7/14/2017.

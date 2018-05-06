@@ -11,9 +11,9 @@ import android.widget.LinearLayout;
 import com.nanshan.lighteningstorm.R;
 import com.nanshan.lighteningstorm.pages.events.CommonEvent;
 import com.nanshan.lighteningstorm.pages.index.Main;
-import com.nanshan.lighteningstorm.ui.adapter.WelcomeAdapter;
-import com.nanshan.lighteningstorm.utils.PageUtils;
-import com.nanshan.lighteningstorm.utils.SPUtils;
+import com.nanshan.lighteningstorm.pages.ui.adapter.WelcomeAdapter;
+import com.nanshan.lighteningstorm.pages.utils.PageUtils;
+import com.nanshan.lighteningstorm.pages.utils.SPUtils;
 import com.squareup.otto.Subscribe;
 
 import butterknife.BindView;

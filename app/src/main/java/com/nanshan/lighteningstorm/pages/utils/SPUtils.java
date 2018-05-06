@@ -1,4 +1,4 @@
-package com.nanshan.lighteningstorm.utils;
+package com.nanshan.lighteningstorm.pages.utils;
 
 import android.annotation.TargetApi;
 import android.content.Context;

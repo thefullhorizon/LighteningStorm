@@ -1,4 +1,4 @@
-package com.nanshan.lighteningstorm.data.database;
+package com.nanshan.lighteningstorm.base.net;
 
 /**
  * Created by nanshan on 9/13/2017.

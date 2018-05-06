@@ -13,7 +13,7 @@
             android:layout_marginTop="100dp"
             android:orientation="vertical">
 
-                <com.nanshan.lighteningstorm.widget.HalvettThinTV
+                <com.nanshan.lighteningstorm.pages.widget.HalvettThinTV
                     android:id="@+id/theme_life"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -42,7 +42,7 @@
             android:layout_marginBottom="5dp"
             android:orientation="vertical">
 
-                <com.nanshan.lighteningstorm.widget.HalvettThinTV
+                <com.nanshan.lighteningstorm.pages.widget.HalvettThinTV
                     android:id="@+id/nickname"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -52,7 +52,7 @@
                     android:textColor="@android:color/white"
                     android:textSize="18sp" />
 
-                <com.nanshan.lighteningstorm.widget.HalvettThinTV
+                <com.nanshan.lighteningstorm.pages.widget.HalvettThinTV
                     android:id="@+id/email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

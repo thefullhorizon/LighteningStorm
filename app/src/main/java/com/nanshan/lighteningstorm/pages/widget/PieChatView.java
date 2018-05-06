@@ -1,4 +1,4 @@
-package com.nanshan.lighteningstorm.widget;
+package com.nanshan.lighteningstorm.pages.widget;
 
 import android.animation.ValueAnimator;
 import android.content.Context;
@@ -14,7 +14,7 @@ import android.util.TypedValue;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
 
-import com.nanshan.lighteningstorm.data.domain.AssetInfoBean;
+import com.nanshan.lighteningstorm.base.data.AssetInfoBean;
 
 import java.util.List;
 

@@ -5,15 +5,12 @@ import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.os.Bundle;
 import android.view.View;
-import android.view.animation.AlphaAnimation;
-import android.view.animation.Animation;
 import android.widget.RelativeLayout;
 
 import com.nanshan.lighteningstorm.R;
 import com.nanshan.lighteningstorm.pages.index.Main;
-import com.nanshan.lighteningstorm.utils.PageUtils;
-import com.nanshan.lighteningstorm.utils.SPUtils;
-import com.nanshan.lighteningstorm.widget.HalvettThinTV;
+import com.nanshan.lighteningstorm.pages.utils.PageUtils;
+import com.nanshan.lighteningstorm.pages.utils.SPUtils;
 
 import butterknife.BindView;
 
